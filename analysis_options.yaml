@@ -1,0 +1,36 @@
+include:
+  - package:flutter_lints/flutter.yaml
+  - package:bloc_lint/recommended.yaml
+
+bloc:
+  rules:
+    avoid_flutter_imports: info
+    avoid_public_bloc_methods: false
+    prefer_bloc: true
+
+formatter:
+  trailing_commas: preserve
+
+analyzer:
+  errors:
+    missing_return: warning
+    dead_code: warning
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - lib/firebase_options.dart
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    avoid_print: true
+    prefer_single_quotes: true
+    directives_ordering: true
+    always_declare_return_types: true
+    avoid_redundant_argument_values: true
+    prefer_final_locals: true

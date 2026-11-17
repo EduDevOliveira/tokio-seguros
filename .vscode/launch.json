@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Tokio (Firebase)",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Tokio (mock, offline)",
+            "request": "launch",
+            "type": "dart",
+            "toolArgs": ["--dart-define=USE_MOCK_AUTH=true"]
+        },
+        {
+            "name": "Tokio Web (Chrome)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome",
+            "env": {
+                "CHROME_EXECUTABLE": "${userHome}/.local/bin/google-chrome-clean"
+            }
+        },
+        {
+            "name": "Tokio Web (mock, Chrome)",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "chrome",
+            "toolArgs": ["--dart-define=USE_MOCK_AUTH=true"],
+            "env": {
+                "CHROME_EXECUTABLE": "${userHome}/.local/bin/google-chrome-clean"
+            }
+        }
+    ]
+}
