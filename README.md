@@ -9,6 +9,18 @@ contratados, menu lateral e cotação de Automóvel em WebView.
 | <img src="docs/screenshots/login_mobile.png" width="220"> <img src="docs/screenshots/home_mobile.png" width="220"> | <img src="docs/screenshots/login_desktop.png" width="420"> <img src="docs/screenshots/home_desktop.png" width="420"> |
 | <img src="docs/screenshots/drawer_mobile.png" width="220"> <img src="docs/screenshots/webview_mobile.png" width="220"> | |
 
+## Acesse online
+
+A versão web está publicada no Firebase Hosting:
+
+**👉 https://super-todolist-e3984.web.app/**
+
+1. Abra o link em qualquer navegador (desktop ou celular — o layout se adapta).
+2. Na primeira vez, use a aba **Cadastrar**: nome, um CPF válido e senha com 6+ caracteres.
+3. Depois é só **Entrar** com o mesmo CPF e senha.
+
+O login é real (Firebase Authentication), então a conta demo do modo offline não funciona nesse link.
+
 ## Rodando
 
 Flutter **3.47+** (Dart 3.13).
@@ -111,7 +123,8 @@ flutter test
 
 ## Deploy da versão web
 
-Configurado para o Firebase Hosting (`firebase.json`):
+Configurado para o Firebase Hosting (`firebase.json`), publicado em
+https://super-todolist-e3984.web.app/:
 
 ```bash
 flutter build web --release
